@@ -1,0 +1,76 @@
+/* login.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Courier, sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.Login-Main {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* make it shrink on narrow screens */
+.Login-Form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 300px;
+    max-width: 90%;       /* responsive */
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.ui-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ui-button:hover {
+    background-color: #f0f0f0;
+}
+
+/* even more responsive tweaks if needed */
+@media (max-width: 360px) {
+    .form-group input,
+    .ui-button {
+        font-size: 13px;
+        padding: 8px;
+    }
+}
